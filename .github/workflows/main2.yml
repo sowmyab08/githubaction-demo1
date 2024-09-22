@@ -8,6 +8,7 @@ jobs:
         run: echo "Hello All"
 
   secondjob:
+    needs: firstjob
     runs-on: ubuntu-latest
     steps:
       - name: Run multiple commands
