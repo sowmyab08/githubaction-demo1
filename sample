@@ -1,0 +1,17 @@
+## write a github action workflow to run 2 commands on ubuntu machine
+## workflow_dispatch meand manually run
+## firstjob is the name of the job which we are giving
+
+name: My first workflow
+on: workflow_dispatch
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greetings
+        run: echo "Hello All"
+      
+      - name: Run multiple commands
+        run: |
+          echo "Welcome to GItHub Actions"
+          echo "This is my first Job"
